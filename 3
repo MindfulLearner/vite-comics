@@ -1,0 +1,22 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/learner/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Funzione per ottenere il branch corrente di Git
+git_branch() {
+  git branch 2>/dev/null | grep '^*' | colrm 1 2
+}
+
+# Prompt colorato con branch Git
+export PS1="%F{green}%~%f %F{yellow}$(git_branch)%f %F{blue}%n@%m%f %# "
+
