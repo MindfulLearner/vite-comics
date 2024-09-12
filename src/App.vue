@@ -1,33 +1,37 @@
 <script>
     import Header from './components/Header.vue';
+    import SottoHeader from './components/SottoHeader.vue';
+    import BlueStripe from './components/BlueStripe.vue';
+    import Footer from './components/Footer.vue';
+    import SottoFooter from './components/SottoFooter.vue';
     export default {
         data() {
             return {
-                messaggio: "cacc",
             };
         },
         components: {
-            Header
-        },
-        methods: {
-            swagTasto() {
-                console.log('like');
-            }
+            Header,
+            SottoHeader,
+            BlueStripe,
+            Footer,
+            SottoFooter
         }
     };
 </script>
 
 <template>
+    <!-- caricato header -->
     <Header />
-    <div>
-        <h1>
-            {{ messaggio }}
-        </h1>
-    </div>
+    <!-- sottoheader -->
+    <SottoHeader />
+    <!-- blu part -->
+    <BlueStripe />
+    <!-- Footer -->
+    <Footer />
+    <!-- SottoFooter -->
+    <SottoFooter />
+
 </template>
 
 <style scoped>
-    h1 {
-        color: white;
-    }
 </style>
