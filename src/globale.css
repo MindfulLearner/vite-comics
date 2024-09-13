@@ -12,16 +12,16 @@ html {
 }
 
 /*
-* {
-    background-color: white; 
-}
-*/
+ * {
+     background-color: white; 
+ }
+ */
 
 * {
     outline: 1px black dashed; 
-         }
+}
 
-        .centered {
-margin: 0 auto;
-width: 1000px;
-        }
+.centered {
+    margin: 0 auto;
+    width: 1400px;
+}

@@ -1,6 +1,7 @@
 <script>
     import Header from './components/Header.vue';
-    import SottoHeader from './components/SottoHeader.vue';
+    import JumboTron from './components/JumboTron.vue';
+    import CardList from './components/CardList.vue';
     import BlueStripe from './components/BlueStripe.vue';
     import Footer from './components/Footer.vue';
     import SottoFooter from './components/SottoFooter.vue';
@@ -11,7 +12,8 @@
         },
         components: {
             Header,
-            SottoHeader,
+            JumboTron,
+            CardList,
             BlueStripe,
             Footer,
             SottoFooter
@@ -22,9 +24,11 @@
 <template>
     <!-- caricato header -->
     <Header />
-    <!-- sottoheader -->
-    <SottoHeader />
-    <!-- blu part -->
+    <!-- jumbotron -->
+    <JumboTron />
+    <!-- card jumbo -->
+    <CardList />
+    <!-- blu pert -->
     <BlueStripe />
     <!-- Footer -->
     <Footer />
